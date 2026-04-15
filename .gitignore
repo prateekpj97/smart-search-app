@@ -1,0 +1,85 @@
+# ────────────────────────────────────────────
+#  General
+# ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+.env
+.env.*
+!.env.example
+
+# Editor / IDE
+.idea/
+.vscode/
+*.iml
+
+# ────────────────────────────────────────────
+#  Rails API  (smart-search-api)
+# ────────────────────────────────────────────
+
+# Secrets — NEVER commit these
+smart-search-api/config/master.key
+smart-search-api/config/credentials/*.key
+
+# Logs & temp files
+smart-search-api/log/*
+!smart-search-api/log/.keep
+smart-search-api/tmp/*
+!smart-search-api/tmp/.keep
+smart-search-api/tmp/cache/
+smart-search-api/tmp/pids/
+smart-search-api/tmp/sockets/
+
+# Uploaded files / Active Storage
+smart-search-api/storage/*
+!smart-search-api/storage/.keep
+
+# Bundler
+smart-search-api/vendor/bundle/
+smart-search-api/.bundle/
+
+# Compiled assets
+smart-search-api/public/assets/
+smart-search-api/public/packs/
+smart-search-api/public/system/
+
+# Database
+*.sqlite3
+*.sqlite3-journal
+
+# Kamal / Docker artifacts
+smart-search-api/.kamal/
+
+# Coverage / test artefacts
+smart-search-api/coverage/
+
+# ────────────────────────────────────────────
+#  React / Vite Frontend  (smart-search-frontend)
+# ────────────────────────────────────────────
+
+# Dependencies
+smart-search-frontend/node_modules/
+
+# Build output
+smart-search-frontend/dist/
+smart-search-frontend/build/
+
+# Vite cache
+smart-search-frontend/.vite/
+
+# Local env overrides
+smart-search-frontend/.env.local
+smart-search-frontend/.env.*.local
+
+# TypeScript build info
+smart-search-frontend/tsconfig.tsbuildinfo
+smart-search-frontend/*.tsbuildinfo
+
+# ────────────────────────────────────────────
+#  AI-agent / Plans (optional — keep docs)
+# ────────────────────────────────────────────
+# Uncomment to exclude planning docs from the repo:
+# AI-agent/
+# plans/
